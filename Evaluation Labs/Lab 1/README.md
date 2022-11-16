@@ -12,7 +12,7 @@
 
 - Number of partitions allowed for TopicA (1, N)
 - Number of consumers allowed (1, N)
-    - Consumer 1: GroupA
+    - Consumer 1: <GroupA>
     - Consumer 2: GroupA
     - ...
     - Consumer N: GroupA
