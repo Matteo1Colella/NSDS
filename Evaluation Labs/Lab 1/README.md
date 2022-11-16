@@ -1,27 +1,35 @@
 # Evaluation lab - Apache Kafka
 
-## Group number: XX
+## Group number: 19
 
 ## Group members
 
-- Student 1 
-- Student 2
-- Student 3
+- Mirko Bitetto
+- Jaime Fernández Plaza
+- Matteo Colella
 
 ## Exercise 1
 
-- Number of partitions allowed for TopicA (min, max)
-- Number of consumers allowed (min, max)
-    - Consumer 1: <list of arguments>
-    - Consumer 2: <list of arguments>
+- Number of partitions allowed for TopicA (1, N)
+- Number of consumers allowed (1, N)
+    - Consumer 1: GroupA
+    - Consumer 2: GroupA
     - ...
-    - Consumer n: <list of arguments>
+    - Consumer N: GroupA
+
+### Observations
+- The number of partitions should be higher or equal to the number of consumers in the same group. If the number of consumers exceeds the number of partition, the exceeding ones are useless
+
 
 ## Exercise 2
 
-- Number of partitions allowed for TopicA (min, max)
-- Number of consumers allowed (min, max)
-    - Consumer 1: <list of arguments>
-    - Consumer 2: <list of arguments>
+- Number of partitions allowed for TopicA (1, N)
+- Number of consumers allowed (1, N)
+    - Consumer 1: GroupA
+    - Consumer 2: GroupA
     - ...
-    - Consumer n: <list of arguments>
+    - Consumer N: GroupA
+
+### Observations
+- The number of partitions should be higher or equal to the number of consumers in the same group. If the number of consumers exceeds the number of partition, the exceeding ones are useless
+- Another implementation could be done using log compaction, it is useful to store the last value for each key, which is the one used for average calculation.
