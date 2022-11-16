@@ -1,0 +1,8 @@
+/Users/matteocolella/Desktop/Politecnico/Magistrale/Primo Semestre 2022-23/Networked Software for Distributed Systems/NSDS_kafka_tutorial/src/main/java/it/polimi/middleware/kafka/basic/BasicProducer.java
+/Users/matteocolella/Desktop/Politecnico/Magistrale/Primo Semestre 2022-23/Networked Software for Distributed Systems/NSDS_kafka_tutorial/src/main/java/it/polimi/middleware/kafka/atomic_forward/AtomicForwarder.java
+/Users/matteocolella/Desktop/Politecnico/Magistrale/Primo Semestre 2022-23/Networked Software for Distributed Systems/NSDS_kafka_tutorial/src/main/java/it/polimi/middleware/kafka/transactional/TransactionalProducer.java
+/Users/matteocolella/Desktop/Politecnico/Magistrale/Primo Semestre 2022-23/Networked Software for Distributed Systems/NSDS_kafka_tutorial/src/main/java/it/polimi/middleware/kafka/admin/TopicManager.java
+/Users/matteocolella/Desktop/Politecnico/Magistrale/Primo Semestre 2022-23/Networked Software for Distributed Systems/NSDS_kafka_tutorial/src/main/java/it/polimi/middleware/kafka/atomic_forward/IdempotentProducer.java
+/Users/matteocolella/Desktop/Politecnico/Magistrale/Primo Semestre 2022-23/Networked Software for Distributed Systems/NSDS_kafka_tutorial/src/main/java/it/polimi/middleware/kafka/transactional/TransactionalConsumer.java
+/Users/matteocolella/Desktop/Politecnico/Magistrale/Primo Semestre 2022-23/Networked Software for Distributed Systems/NSDS_kafka_tutorial/src/main/java/it/polimi/middleware/kafka/basic/BasicConsumer.java
+/Users/matteocolella/Desktop/Politecnico/Magistrale/Primo Semestre 2022-23/Networked Software for Distributed Systems/NSDS_kafka_tutorial/src/main/java/it/polimi/middleware/kafka/basic/BasicConsumerManual.java
