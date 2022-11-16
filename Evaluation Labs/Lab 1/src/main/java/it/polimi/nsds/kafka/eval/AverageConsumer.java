@@ -16,7 +16,7 @@ import java.util.Properties;
 
 public class AverageConsumer {
     private static final String serverAddr = "localhost:9092";
-    private static final String inputTopic = "outputTopic";
+    private static final String inputTopic = "inputTopic";
 
     private static final boolean autoCommit = true;
     private static final int autoCommitIntervalMs = 15000;
