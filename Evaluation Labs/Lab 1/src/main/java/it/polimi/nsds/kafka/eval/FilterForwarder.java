@@ -25,8 +25,7 @@ public class FilterForwarder {
     private static final String producerTransactionalId = "forwarderTransactionalId2";
 
     public static void main(String[] args) {
-        // final String consumerGroupId = args[0];
-        final String consumerGroupId = "GroupA";
+        final String consumerGroupId = args[0];
 
         // Consumer
         final Properties consumerProps = new Properties();

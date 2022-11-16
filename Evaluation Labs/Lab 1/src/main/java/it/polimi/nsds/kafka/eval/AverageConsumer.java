@@ -25,8 +25,7 @@ public class AverageConsumer {
     private static final String offsetResetStrategy = "latest";
 
     public static void main(String[] args) {
-        // final String consumerGroupId = args[0];
-        final String consumerGroupId = "GroupA";
+        final String consumerGroupId = args[0];
 
         final Properties props = new Properties();
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, serverAddr);
