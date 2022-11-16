@@ -18,7 +18,8 @@
     - Consumer N: GroupA
 
 ### Observations
-- The number of partitions should be higher or equal to the number of consumers in the same group. If the number of consumers exceeds the number of partition, the exceeding ones are useless
+- The number of partitions should be higher or equal to the number of consumers in the same group. If the number of consumers exceeds the number of partitions, the exceeding ones are useless
+- "GroupA" is just an example. we can use any group name we want, as long as it's the same for each consumer.
 
 
 ## Exercise 2
@@ -31,5 +32,6 @@
     - Consumer N: GroupA
 
 ### Observations
-- The number of partitions should be higher or equal to the number of consumers in the same group. If the number of consumers exceeds the number of partition, the exceeding ones are useless
-- Another implementation could be done using log compaction, it is useful to store the last value for each key, which is the one used for average calculation.
+- The number of partitions should be higher or equal to the number of consumers in the same group. If the number of consumers exceeds the number of partitions, the exceeding ones are useless
+- Another implementation could be done by using log compaction in the inputTopic, it is used to store only the last value for each key, which is the one used for average calculation.
+- "GroupA" is just an example. we can use any group name we want, as long as it's the same for each consumer.
