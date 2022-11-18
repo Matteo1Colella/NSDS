@@ -22,7 +22,9 @@ public class CounterActor extends AbstractActor {
 		if (msg.getCode() == CounterSupervisor.NORMAL_OP) {
 			System.out.println("I am executing a NORMAL operation...counter is now " + (++counter));
 		} else if (msg.getCode() == CounterSupervisor.FAULT_OP) {
-			System.out.println("I am emulating a FAULT!");		
+
+			//emulating a fault
+			System.out.println("I am emulating a FAULT!");
 			throw new Exception("Actor fault!"); 
 		}
 	}

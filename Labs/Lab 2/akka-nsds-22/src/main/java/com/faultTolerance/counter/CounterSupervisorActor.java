@@ -12,9 +12,11 @@ public class CounterSupervisorActor extends AbstractActor {
 	 // #strategy
     private static SupervisorStrategy strategy =
         new OneForOneStrategy(
-            1, // Max no of retries
+            1, // Max no of retries, handles at most one fault per minute
             Duration.ofMinutes(1), // Within what time period
-            DeciderBuilder.match(Exception.class, e -> SupervisorStrategy.restart())
+            DeciderBuilder.match(Exception.class, e -> SupervisorStrategy.stop())				//restart: restarts the actor completely, so does the state, the counter turns back to 0
+																								//resume: resumes, the counter preserves its last value
+																								//stop: stops the actor completely, so it is not able to receive messages
                 .build());
 
     @Override

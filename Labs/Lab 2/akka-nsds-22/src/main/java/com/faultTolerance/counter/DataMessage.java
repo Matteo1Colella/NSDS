@@ -1,5 +1,7 @@
 package com.faultTolerance.counter;
 
+//action taken depends on the code of the message
+
 public class DataMessage {
 
 	private int code;

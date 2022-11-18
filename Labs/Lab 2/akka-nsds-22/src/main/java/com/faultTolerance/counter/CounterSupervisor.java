@@ -29,7 +29,7 @@ public class CounterSupervisor {
 			scala.concurrent.Future<Object> waitingForCounter = ask(supervisor, Props.create(CounterActor.class), 5000);
 			counter = (ActorRef) waitingForCounter.result(timeout, null);
 
-			counter.tell(new DataMessage(NORMAL_OP), ActorRef.noSender());
+			counter.tell(new DataMessage(NORMAL_OP), ActorRef.noSender()); // tell the counterActor to increment
 
 			for (int i = 0; i < FAULTS; i++)
 				counter.tell(new DataMessage(FAULT_OP), ActorRef.noSender());
