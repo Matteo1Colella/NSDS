@@ -17,7 +17,7 @@ public class CounterActor extends AbstractActor {
 	}
 
 	void onOtherMessage(OtherMessage message){
-		System.out.println("Received one other message");
+		System.out.println("Received one message");
 	}
 
 	void onMessage(SimpleMessage msg) {
