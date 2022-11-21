@@ -1,8 +1,6 @@
-package com.exercises.ex3;
+package com.exercises.ex5;
 
 public class GetMsg {
-
-
     private String name;
 
     public GetMsg (String name) {
@@ -12,5 +10,4 @@ public class GetMsg {
     public String getName() {
         return name;
     }
-
 }

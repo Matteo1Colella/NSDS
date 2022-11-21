@@ -1,4 +1,4 @@
-package com.exercises.ex3;
+package com.exercises.ex5;
 
 public class PutMsg {
     private String name;
@@ -16,5 +16,4 @@ public class PutMsg {
     public String getEmail() {
         return email;
     }
-
 }
